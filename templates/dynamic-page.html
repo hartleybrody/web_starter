@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Look at this dynamic page</title>
+	</head>
+	<body>
+		<h1>Look at this dynamic page!</h1>
+		<p>
+			Isn't it sweet! Try adding more query arguments to the URL, separated with "&amp;" signs. Like this:
+		</p>
+		<pre>
+			?name=Sarah&amp;gender=Female&amp;hometown=Boston
+		</pre>
+		<table border="1">
+		{% for key, value in user_data.items() %}
+			<tr>
+				<td>{{key}}</td>
+				<td>{{value}}</td>
+			</tr>
+		{% endfor %}
+		</table>
+	</body>
+</html>
