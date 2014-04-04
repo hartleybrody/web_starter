@@ -27,14 +27,14 @@ First, type `python` and hit enter. You should see something like this
 
 This ensures that you have Python installed on your system, which we'll need to run our app. Note that your version number might look a little different, but as long as your version of Python is 2.6 or greater, you should be fine.
 
-If you want, you can start typing and hit enter, you'll be writing Python code! If you're ready to move on, just hit `Ctrl+D` to exit out of the Python interactive interpreter.
+If you want, you can start typing and hit enter, you'll be writing Python code! Try typing `2+2` `or 2**8` to do some basic math. If you're ready to move on, just hit `Ctrl+D` to exit out of the Python interactive interpreter.
 
 ### Ensuring Git is Installed
 The next command we're goint to try running is called "git" and it's a program that's used to keep track of changes to files over time. This is known as "version control" and is super important if you'll be working on real apps.
 
 Git allows you to see all of the different changes that were made to the app over time, and what was added and removed every time a change was made. This lets you "step through" the changes and see the stages the app went through as it was being built.
 
-We'll also use git to download a copy of the app on your computer. Try running the `git` in your terminal window and see what happens. If you see a big output about usage and commonly used commands, then you already have it installed on your system and you're ready to go.
+We'll also use git to download a copy of the app on your computer. Try typing `git` in your terminal window, hit "enter" and see what happens. If you see a big output about usage and commonly used commands, then you already have it installed on your system and you're ready to go and can skip to the next section.
 
 Unfortunately, most new Macs don't have git installed by default, so you'll probably need to install it [from here](http://sourceforge.net/projects/git-osx-installer/). Once you download the installer and run through all the steps, you should be able to close and re-open the terminal application, type `git` and press enter, and see some output that looks like this:
 
@@ -73,7 +73,7 @@ Unfortunately, most new Macs don't have git installed by default, so you'll prob
 
 
 ### Downloading the Project Locally Using Git
-Alright, now that we have ensured your system has both Python and Git installed, we're ready to start getting the application setup. Note that we'll be running a bunch of commands in the same Terminal window, so it's important to leave that up the whole time.
+Alright, now that we have ensured your system has both Python and git installed, we're ready to start getting the application setup. Note that we'll be running a bunch of commands in the same terminal window, so it's important to leave that up the whole time.
 
 First, you'll want to move to your desktop by running
 
@@ -105,7 +105,7 @@ Then, to install the packages, you run
 This tells pip to install all of the packages listed inside the `requirements.txt` file. That might take a few seconds to download and install everything, and then everything is ready to go!
 
 ### Starting Your Local Server
-If you're still hanging in there, nice work! You will almost never have to run those steps again when you're first starting out, so you should be able to let them slide right out of your brain. Go take a break if need be to let your mind rest (but leave the Terminal window open).
+If you're still hanging in there, nice work! You will almost never have to run those steps again when you're first starting out, so you should be able to let them slide right out of your brain. Go take a break if need be to let your mind rest (but leave the terminal window open).
 
 Now that we're ready to start working on the app, simply type
 
@@ -116,7 +116,7 @@ and you should see the following output
 	* Running on http://127.0.0.1:5000/
 	* Restarting with reloader
 
-Now, open up your browser and navigate to `http://localhost:5000/` and you should see the homepage of your app! Wooho!
+Now, open up your browser and navigate to `http://localhost:5000/` and you should see the homepage of your app! Woohoo!
 
 ## Working On the App
 Using your favorite text editor (not Microsoft Word, try TextEdit), open the `app.py` file that's inside the app folder and start reading what's inside. There are tons of comments -- pieces of text that are meant for humans and are ignored by the program -- with every line of code, so it should be easy to read along and see what's happening.
@@ -124,6 +124,26 @@ Using your favorite text editor (not Microsoft Word, try TextEdit), open the `ap
 Once you've read through the basics, you'll be itching to start tinkering. Feel free to edit the code and play with your app. The local development server should reload every time you change a file, so edit something and then go see your changes by refreshing the app in your browser.
 
 If you want to learn more about other functions and tools that the Flask framework provides (like user sessions and showing messages and redirecting requests), check out the [Flask Quickstart Guide](http://flask.pocoo.org/docs/quickstart/) for more.
+
+### You Should Learn Basic Git
+Whenever you make some big changes to the app that you're happy with, you should use git to "commit those changes", in order to save your progress. That way, if something goes wrong or you somehow mess everything up, you can easily revert back to your happy state. It also makes it easy to share your code with others and merge in changes someone else might want to make to help you.
+
+Using git is outside the scope of this tutorial, and you won't need it if you're just tinkering around. But if you start building something cool that you might actually launch and use, you should definitely take the time to [learn the basics of git](https://www.atlassian.com/git/tutorial/git-basics).
+
+### Learning More About Web Development
+Building applications for the web, you might be overwhelmed by the vast number of complex concepts that come into play. From HTTP and networks, to databases and analytics, to caching and client-side Javascript code, there's a lot you need to learn to become a "full stack web developer", capable of building an entire web application yourself.
+
+But don't fret about that now. You'll learn about those concepts as you need them. There's no point trying to learn them all at once and then getting overwhelmed. Just keep an open mind, don't be scared to "Google" things when you're stuck ([stackoverflow.com](http://stackoverflow.com) is your friend!) and try to find a buddy or mentor you can bounce questions off of when you're really stuck.
+
+Being a software developer in any field -- web, mobile, systems, etc -- requires being a constant, life long learner. Technologies change, best practices evolve. If you keep working at it over time, you'll become more proficient and learn how to tackle the same problem in different ways, moving from [Hacker to Developer to Engineer](http://blog.hartleybrody.com/hacker-developer-engineer/).
+
+### More Great Web Development Resources
+* [The Official Flask Tutorial](http://flask.pocoo.org/docs/tutorial/) - Walks you through the steps of creating a basic twitter clone. You'll learn how to store things in a database for later retrieval and how to do super basic user authentication.
+
+* [The Tuts+ Flask Tutorial](http://code.tutsplus.com/tutorials/an-introduction-to-pythons-flask-framework--net-28822) - This expands a bit on what we did in our app, adding template inhertence, so that you don't need to rewrite the same HTML in every template file.
+
+* [The Flask Mega Tutorial](http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world) - This is a really long tutorial but it covers most of the major aspects of building web applications, like using forms, sending email, doing (proper) user authentication, writing tests to let you know if you accidentally broke something, and deploying your application to a web server.
+
 
 ## Contribute!
 If there are things you'd like to see added to this app, feel free to send me a pull request. Please keep in mind that the audience is people who are making their first foyer into web development, so anything that's too complex will be rejected.
