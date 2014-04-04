@@ -30,18 +30,20 @@ def homepage():
     # Inside this function, you can run whatever logic you want, running any python
     # code your heart desires. You could check the cookies on the request to see if
     # there's a logged in user making the requests, you could read or write to a
-    # database or run any kind of functions you want.
+    # database or run any kind of functions you want. Here, we're just returning a 
+    # simple string to be returned as the response.
     return "Hello World"
 
 
-@app.route("/cool-page/")
-def cool_page():
-    # But you don't want to have to write the HTML for your pages inside a python
+@app.route("/basic-page/")
+def basic_page():
+    # But you don't want to have to write the HTML for your webpages inside a python
     # string. That'd get really annoying quickly. Thankfully, most web frameworks
     # come with a "template engine" that can take basic HTML files and spit it out
-    # in a response. Here, we created a file called 'cool-page.html' inside the
+    # in a response. Here, we're rendering the 'basic-page.html' file inside the
     # templates folder, which is where Flask looks for template files by default.
-    return render_template("cool-page.html")
+    # Rending just means taking the template and turning it into a complete HTML documet.
+    return render_template("basic-page.html")
 
 # Using templates is cool and all, but web applications are supposed to by dynamic,
 # not just showing the same content every time you load the page. So let's build a
@@ -53,17 +55,18 @@ def dynamic_page():
     # If there are no query arguments on the URL (ie length of query arguments is 0)
     # then tell the user to try adding some.
     if len(request.args) == 0:
-        return "Add some query arguments to the end of the URL! Like this ?name=Ben"
+        return "Add some query arguments to the end of the URL. Like this ?name=Ben"
 
     # Here, we're rendering a different template, and passing the query arguments
     # to the template to be mixed into the content. This will create a variable
-    # called `user_data` that we can access in the HTML template, and it contains the
-    # values that were in the query arguments.
+    # called `user_data` that we can user in the HTML template, and it contains the
+    # values that were in the query arguments. Go check out that file to see how that
+    # works.
     return render_template("dynamic-page.html", user_data=request.args)
 
 
 # Some boilerplate code that just says "if you're running this from the command
-# line, start here." Again, not critical to know what this means yet.
+# line, start here." It's not critical to know what this means yet.
 if __name__ == "__main__":
     app.debug = True
     app.run()
