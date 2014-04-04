@@ -27,7 +27,7 @@ First, type `python` and hit enter. You should see something like this
 
 This ensures that you have Python installed on your system, which we'll need to run our app. Note that your version number might look a little different, but as long as your version of Python is 2.6 or greater, you should be fine.
 
-If you want, you can start typing and hit enter, you'll be writing Python code! Try typing `2+2` `or 2**8` to do some basic math. If you're ready to move on, just hit `Ctrl+D` to exit out of the Python interactive interpreter.
+If you want, you can start typing and hit enter, you'll be writing Python code! Try typing `2+2` or `2**8` to do some basic math. If you're ready to move on, just hit `Ctrl+D` to exit out of the Python interactive interpreter.
 
 ### Ensuring Git is Installed
 The next command we're goint to try running is called "git" and it's a program that's used to keep track of changes to files over time. This is known as "version control" and is super important if you'll be working on real apps.
@@ -143,6 +143,13 @@ Being a software developer in any field -- web, mobile, systems, etc -- requires
 * [The Tuts+ Flask Tutorial](http://code.tutsplus.com/tutorials/an-introduction-to-pythons-flask-framework--net-28822) - This expands a bit on what we did in our app, adding template inhertence, so that you don't need to rewrite the same HTML in every template file.
 
 * [The Flask Mega Tutorial](http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world) - This is a really long tutorial but it covers most of the major aspects of building web applications, like using forms, sending email, doing (proper) user authentication, writing tests to let you know if you accidentally broke something, and deploying your application to a web server.
+
+### Example Projects
+One of the best ways to learn any sort of coding is to look at working example code that's already being used in production. Here are some projects I've built using the Flask web framework.
+
+* [Project Naming](http://project-naming.herokuapp.com/) - A simple app that checks to see if the name you're thinking of using for a project would be available on Twitter, Facebook and as a domain name. [Code on github, here](https://github.com/hartleybrody/naming).
+
+* [Rooster App](http://www.roosterapp.co/) - An app that sends you a text message with your local forecast each morning. The code is a bit more complex than the Project Naming example, but you should still be able to recognize things you've seen before. [Code on github, here](https://github.com/hartleybrody/rooster).
 
 
 ## Contribute!
