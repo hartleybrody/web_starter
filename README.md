@@ -144,6 +144,8 @@ Being a software developer in any field -- web, mobile, systems, etc -- requires
 
 * [The Flask Mega Tutorial](http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world) - This is a really long tutorial but it covers most of the major aspects of building web applications, like using forms, sending email, doing (proper) user authentication, writing tests to let you know if you accidentally broke something, and deploying your application to a web server.
 
+* [Flaskr - Intro to Flask, Test Driven Development, and jQuery](https://github.com/mjhea0/flaskr-tdd) - This tutorial takes the Official Flask Tutorial to the next level by adding Test Driven Development as well as jQuery and AJAX, Bootstrap 3, and SQLAlchemy.
+
 ### Example Projects
 One of the best ways to learn any sort of coding is to look at working example code that's already being used in production. Here are some projects I've built using the Flask web framework.
 
